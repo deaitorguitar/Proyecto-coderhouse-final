@@ -1,0 +1,30 @@
+.titulo-nosotras{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    text-decoration: solid;
+
+}
+
+.portada-nosotras{
+    background-image: url(../img/Nosotoras.jpeg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+
+.texto-nosotras{
+    padding: 32px;
+}
+
+@media(max-width:320px){
+    .portada-nosotras{
+        background-size: 330px;
+        height: 300px;
+    }
+}
