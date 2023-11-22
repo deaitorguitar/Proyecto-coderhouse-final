@@ -270,6 +270,29 @@ header{
 
     }
 }
+@media(max-width:725px){
+    .container-productos{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px ;
+        .c{
+            width: 300px;
+
+        }
+
+    }
+}
+
+@media(max-width:681px){
+    .container-productos{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10px ;
+        .c{
+            width: 280px;
+
+        }
+
+    }
+}
 
 
 @media(max-width:480px){

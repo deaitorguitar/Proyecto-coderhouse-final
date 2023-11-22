@@ -267,6 +267,24 @@ header {
     width: 320px;
   }
 }
+@media (max-width: 725px) {
+  .container-productos {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+  }
+  .container-productos .c {
+    width: 300px;
+  }
+}
+@media (max-width: 681px) {
+  .container-productos {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+  }
+  .container-productos .c {
+    width: 280px;
+  }
+}
 @media (max-width: 480px) {
   .container-productos {
     grid-template-columns: repeat(1, 1fr);
