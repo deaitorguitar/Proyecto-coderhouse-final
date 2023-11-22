@@ -16,33 +16,33 @@
 <body>
 
     <header>
-        <!-- <h1 class="Titulo">Little Brownie Box BA</h1> -->
-
-        <div>
-            <img src="../img/Icono-png.png" alt="Icono littlebrownieboxba" class="logo-pagina">
+        <div class="">
+            <a href="../index.html">
+                <img src="../img/Icono-png.png" alt="Icono littlebrownieboxba" class="logo-pagina">
+            </a>
+    
         </div>
-
-
-        <i class="bi bi-list menu-hamburguesa"></i>
+    
         <nav>
             <ul class="nav-list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Productos.html" class="active">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotras</a></li>
-                <li><a href="./Preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="../pages/Productos.html">Productos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/nosotros.html">Nosotras</a></li>
+                <li><a href="../pages/Preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                <li class="carrito">
+                    <span class="contenido-carrito"><a href="../pages/Productos.html"><i class="bi bi-cart-fill"></i></a></span>
+                </li>
+    
             </ul>
         </nav>
-        <div class="carrito">
-            <i class="bi bi-cart-fill"><span>($0)</span></i>
-            <a href="../pages/Productos.html">.</a>
-        </div>
+
 
         
     </header>
 
-    <main class="main-contacto" data-aos="fade-down">
-        <h1 class="titulo-contacto">Contacto</h1>
+    <main class="main-contacto" >
+        <h2 class="titulo-contacto">Contacto</h2>
  
 
         <section class="container contacto">
@@ -57,17 +57,17 @@
 
                 <div class="input-wrapper">
                     <label for="nombre">Nombre y apellido</label>
-                    <input type="text" id="nombre" placeholder="Ejemplo: Marta Rodriguez">
+                    <input class="nombre-contacto" type="text" id="nombre"  placeholder="Ejemplo: Maria Eugenia Fernandez">
                 </div>
 
                 <div class="input-wrapper">
                     <label for="correo">Correo electronico:</label>
-                    <input type="email" id="correo" placeholder="ejemplo@mail.com">
+                    <input class="email-contacto" type="email" id="correo" placeholder="ejemplo@mail.com">
                 </div>
 
                 <div class="input-wrapper">
                     <label for="mensaje" class="mensaje-contacto">Ingrese su mensaje:</label>
-                    <textarea id="mensaje" cols="25" rows="10"></textarea>
+                    <textarea class="mensaje-contacto" id="mensaje" cols="30" rows="10"></textarea>
                 </div>
 
                 <div>
@@ -84,7 +84,7 @@
     </main>
 
     <footer>
-    <section class="container footer-todo">
+        <section class="container-footer footer-todo">
     <div class="footer-secciones">
         <h4>Secciones</h4>
         <ul>

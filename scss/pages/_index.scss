@@ -1,41 +1,21 @@
 
-/* ---- Container ---- */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: block;
-}
-
 
 /* ----Header---- */
 
 .logo-pagina{
-    height: 110px;
+    height: 100px;
+
 }
 
 header{
-    background-color: rgb(68, 40, 5);
-    justify-content: space-between;
+    background-color: $color-principal;
     display: flex;
-    padding: 1rem;
     flex-direction: column;
     align-items: center;
     font-size: 20px;
-    margin: 600px;
-    
+    text-align: center;
 }
 
-// .active{
-//     text-decoration: underline solid;
-// }
-
-.Titulo{
-    color: rgb(218, 210, 210);
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 35px;
-}
 
 .carrito{
     cursor: pointer;
@@ -43,9 +23,6 @@ header{
     gap: 1rem;
 }
 
-.menu-hamburguesa{
-    display: none;
-}
 
 .nav-list{
     gap: 5rem;
@@ -82,23 +59,28 @@ header{
     color: white;
 }
 
-@media(min-width:769px) {
+@media(min-width:915px) {
     header{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        top: 0;
+        height: 80px;
+        width: 100%;
         
     }
     .nav-list{
         display: flex;
         gap: 1rem;
+        margin-right: 50px;
 
     }
 
 
 }
 
-@media(max-width:768px){
+@media(max-width:915px){
     .carrito{
         display: none;
     }
@@ -114,6 +96,7 @@ header{
 }
 
 .contenido-portada{
+    text-align: center;
     max-width: 90rem;
     margin: 30 auto;
     padding: 25rem 0;
@@ -141,22 +124,6 @@ header{
     }
 }
 
-// .boton-portada{
-//     margin-top: 2rem;
-//     text-decoration: none;
-//     color: white;
-//     background-color: $color-principal;
-//     display: inline-block;
-//     padding: 1rem 3rem;
-//     text-transform: uppercase;
-//     border-radius: 6rem;
-//     width: 14rem;
-//     justify-content: end;
-//     margin-left: 550px;
-// }
-
-
-
 
 /* ----Tarjetas de los productos destacados---- */
 
@@ -168,11 +135,30 @@ header{
     font-size: 4rem;
     text-decoration: solid;
     margin-top: 50px;
+    color: $color-terciario;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img{
+        width: 100px;
+    }
+}
+
+.destacados{
+    margin-top: 2rem;
+    padding: 2rem;
 }
 
 
-
 // ----Cartelitos----
+
+.container-cartelitos{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
 
 .container-cartel{
     display: grid;

@@ -1,30 +1,120 @@
-.titulo-nosotras{
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.seccion-nosotras{
+    margin: auto;
+    margin-top: 100px;
+    width: 75%;
+    padding: 100px 0;
+}
+.titulo-nosotras{   
     font-size: 4rem;
-    text-decoration: solid;
-
+    font-family: var(--body-font); 
+    color: $color-terciario;
+    font-weight: bold;
+    margin-bottom: 75px;
 }
 
-.portada-nosotras{
+.background-nosotras{
     background-image: url(../img/Nosotoras.jpeg);
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 500px;
+    display: none;
 }
 
-.texto-nosotras{
-    padding: 32px;
+.nosotras{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
 }
 
-@media(max-width:320px){
-    .portada-nosotras{
-        background-size: 330px;
+.nosotras-parrafos{
+    width: 60%;
+    padding: 0 10% 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotras-texto{
+    font-size: 18px;
+}
+
+.texto{
+    text-align: justify;
+}
+
+.final-texto{
+    color: $color-terciario;
+    text-decoration: underline;
+}
+
+.redes-sociales-nosotras{
+
+}
+
+.titulo-redes-nosotras{
+    font-family: var(--body-font); 
+    font-size: 24px;
+}
+
+.redes-sociales-iconos{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: $color-principal;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    
+}    
+
+.nosotras-img{
+
+    width: 40%;
+}
+
+.img-nosotras{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+@media(max-width:998px){
+    .seccion-nosotras{
+        margin-top: 10px;
+    }
+    .titulo-nosotras{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .nosotras-texto{
+        font-size: 100%;
+    }
+    .redes-sociales-iconos{
+        display: none;
+    }
+    .titulo-redes-nosotras{
+        display: none;
+    }
+    .nosotras-parrafos{
+        width: 100%;
+        padding: 0 10% 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nosotras-img{
+
+        display: none;
+    }
+    .background-nosotras{
+        display: flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px;
         height: 300px;
+        border-radius: 5px;
+    }
+    .texto{
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 20px;
     }
 }

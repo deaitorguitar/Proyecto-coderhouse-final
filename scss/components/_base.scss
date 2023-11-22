@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 $color-principal: rgb(68, 40, 5);
 $color-secundario: rgb(252, 225, 210);
 $color-terciario: rgb(85, 50, 33);
+$blanco: #ffffff;
+$negro: #000000;
 $color-background: #f9f5f0;
+
+:root{
+    --body-font:"Poppins", sans-serif;
+}
+
 
 
 *{
@@ -12,8 +21,8 @@ $color-background: #f9f5f0;
 }
 
 body{
-    margin: 0;
     background-color: $color-background;
+    font-family: var(--body-font);
 }
  
 ul, ol{
@@ -28,16 +37,23 @@ a{
 
 img{
     max-width: 100%;
+    height: auto;
 }
 
-h1{
-    text-align: center;
-    padding: 2rem;
-    text-decoration: solid;
-    font-size: 40px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+// Contenido Reusable CSS
+
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
 }
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+
 
 @media(max-width:768px){
     html{

@@ -1,14 +1,15 @@
 .titulo-contacto{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3px;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: solid;
+  font-size: 40px;
+  margin-top: 200px;
   font-size: 4rem;
-  text-decoration:solid;
-  margin: 3rem;
+  color: $color-terciario;
 }
 
 .contacto {
+  margin: auto;
   padding: 3rem 1rem;
   img {
       display: none;
@@ -44,6 +45,8 @@
   color: white;
   border: 0;
 }
+
+
   
 @media(max-width: 1200px) {
   .container-secc-productos{
@@ -93,11 +96,22 @@
   }
 }
 
+@media(max-width:495px){
+  .mensaje-contacto{
+    width: 100%;
+  }
+}
 
 
 @media(max-width:320px){
   .mensaje-contacto{
-    max-width: fit-content;
+    width: 100%;
+  }
+  .email-contacto{
+    width: 100%;
+  }
+  .nombre-contacto{
+    width: 100%;
   }
 }
 
