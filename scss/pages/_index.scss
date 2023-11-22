@@ -170,21 +170,133 @@ header{
     margin-top: 50px;
 }
 
+.container-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5px;
+    margin-left: 120px ;
 
-.carrusel{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
+    .c{
+        max-width: fit-content;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        &:hover{
+            transform: translateY(-15px); 
+            box-shadow: 0 12px 16px;
+            img{
+                transform: scale(1.2);
+            }
+
+        }
+        & figure{
+            overflow: hidden;
+        }
+        & img{
+            width: 330px;
+            height: 300px;
+            border-radius: 10px 10px 10px 10px;
+            object-fit: cover;
+            transition: 2s;
+        }
+        & h3{
+            font-weight: 600;
+        }
+        & p{
+            padding: 0 1rem;
+            font-size: 16px;
+        }
+        & button{
+            color: white;
+            background-color: $color-principal;
+            padding: 0.7rem;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    }
+
 }
 
-.elemento{
-    flex: 1 0 auto;
-    margin: 0 50px;
-    background-color: $color-terciario;
-    width: 500px;
-    height: 500px;
-    img{
-        object-fit: contain;
+.tarjeta-producto{
+    margin-top: 10px;
+}
+
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.comprar{
+    cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+    .container-productos{
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 40px;
+        .c{
+            width: 340px;
+
+        }
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .container-productos{
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 0px;
+        .c{
+            width: 290px;
+        }
+    }
+}
+
+
+
+@media(max-width:768px){
+    .container-productos{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 20px ;
+        .c{
+            width: 320px;
+
+        }
+
+    }
+}
+
+
+@media(max-width:480px){
+    .container-productos{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 75px;
+        .c{
+            max-width: fit-content;
+            & img{
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+@media(max-width:320px){
+    .container-productos{
+        grid-template-columns: repeat(1,1fr);
+        margin-left:0 ;
+        .c{
+            width: 290px;
+            & img{
+                margin: 0;
+            }
+        }
+
     }
 }
 
