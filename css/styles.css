@@ -177,7 +177,7 @@ header {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 30rem);
+  grid-template-rows: repeat(2, 25rem);
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -196,7 +196,7 @@ header {
   margin-top: 2rem;
   text-decoration: none;
   color: white;
-  background-color: rgb(68, 40, 5);
+  background-color: rgb(85, 50, 33);
   display: flex;
   padding: 1rem 3rem;
   text-transform: uppercase;
@@ -364,14 +364,21 @@ body {
 }
 
 .container-productos {
+  max-width: 1600px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-productos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  margin-left: 70px;
 }
 .container-productos .producto {
   max-width: fit-content;
-  height: 450px;
+  height: 500px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -428,7 +435,6 @@ body {
 @media (max-width: 915px) {
   .container-productos {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 50px;
   }
   .titulo-productos {
     margin-top: 20px;
@@ -437,7 +443,6 @@ body {
 @media (max-width: 580px) {
   .container-productos {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0px;
   }
   .titulo-productos {
     margin-top: 20px;
@@ -446,7 +451,7 @@ body {
 @media (max-width: 456px) {
   .container-productos {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 45px;
+    margin-left: 30px;
   }
   .titulo-productos {
     margin-top: 20px;
@@ -606,6 +611,7 @@ body {
 
 .texto {
   text-align: justify;
+  font-weight: bold;
 }
 
 .final-texto {
