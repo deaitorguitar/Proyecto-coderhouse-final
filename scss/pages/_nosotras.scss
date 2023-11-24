@@ -21,6 +21,7 @@
     display: flex;
     gap: 6rem;
     align-items: center;
+    margin: auto;
 }
 
 .nosotras-parrafos{
@@ -36,12 +37,13 @@
 
 .texto{
     text-align: justify;
-    font-weight: bold;  
+    
 }
 
 .final-texto{
     color: $color-terciario;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .titulo-redes-nosotras{
@@ -110,7 +112,7 @@
     }
     .texto{
         margin-top: 10px;
-        text-align: center;
+        text-align: justify;
         margin-left: 20px;
     }
 }

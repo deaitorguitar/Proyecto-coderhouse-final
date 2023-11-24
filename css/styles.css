@@ -457,6 +457,15 @@ body {
     margin-top: 20px;
   }
 }
+@media (max-width: 428px) {
+  .container-productos {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 15px;
+  }
+  .titulo-productos {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 320px) {
   .container-productos {
     grid-template-columns: repeat(1, 1fr);
@@ -596,6 +605,7 @@ body {
   display: flex;
   gap: 6rem;
   align-items: center;
+  margin: auto;
 }
 
 .nosotras-parrafos {
@@ -611,12 +621,12 @@ body {
 
 .texto {
   text-align: justify;
-  font-weight: bold;
 }
 
 .final-texto {
   color: rgb(85, 50, 33);
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .titulo-redes-nosotras {
@@ -681,7 +691,7 @@ body {
   }
   .texto {
     margin-top: 10px;
-    text-align: center;
+    text-align: justify;
     margin-left: 20px;
   }
 }
@@ -692,7 +702,7 @@ body {
   padding: 5px;
   font-size: 4rem;
   text-decoration: solid;
-  margin-top: 150px;
+  margin-top: 100px;
   color: rgb(85, 50, 33);
   margin-bottom: 100px;
   text-align: center;
@@ -705,7 +715,14 @@ body {
 .parrafo-preguntas {
   padding: 60px;
   text-align: start;
-  margin: 60px;
+  margin: auto;
+}
+
+@media (max-width: 320px) {
+  .titulo-preguntas {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

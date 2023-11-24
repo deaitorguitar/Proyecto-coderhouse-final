@@ -6,7 +6,7 @@
     padding: 5px;
     font-size: 4rem;
     text-decoration: solid;
-    margin-top: 150px;
+    margin-top: 100px;
     color: $color-terciario;
     margin-bottom: 100px;
     text-align: center;
@@ -19,7 +19,13 @@
 .parrafo-preguntas{
     padding: 60px;
     text-align: start;
-    margin: 60px;
+    margin: auto;
     
 }
 
+@media (max-width:320px) {
+    .titulo-preguntas{
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+}
