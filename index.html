@@ -33,6 +33,7 @@
             <li><a href="./pages/Preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
             <li class="carrito">
                 <span class="contenido-carrito"><a href="./pages/Productos.html"><i class="bi bi-cart-fill"></i></a></span>
+                <div id="numero"></div>
             </li>
 
         </ul>
@@ -52,6 +53,8 @@
                 <a href="./pages/Productos.html" class="boton-portada">Comprar ahora</a>    
             </div>
         </section>
+
+        <div id="container-cart" class="container-cart"></div>
 
         
 <!-- ----Productos destacados---- -->
@@ -122,6 +125,17 @@
         </div>
 
     </main>
+
+    <div id="contenedor-compra" >
+        <div class="informacioncompra" id="informacioncompra">
+            <h2>Carrito</h2>
+            <p class="x" id="x">x</p>
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar compra</button>
+    </div>
     
 <!-- ----Footer----  -->
     <footer>
@@ -159,10 +173,13 @@
 
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./main.js"></script>
+    
     
 
 </body>
