@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conéctate Con Nosotros. ¿Tienes preguntas, comentarios o simplemente deseas saludarnos? Estamos aquí para escucharte. Utiliza nuestra sección de contacto para ponerte en contacto con nuestro equipo. Ya sea a través de correo electrónico o completando nuestro formulario en línea, estamos ansiosos por saber de ti. ¡Esperamos poder ayudarte en todo lo que necesites!">
-    <title>LittleBrowniebox BA - Contactanos, respondemos lo que necesites!</title>
+    <title>LittleBrowniebox BA - Realiza tu compra ya!</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../img/Icono-png.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="header-carrito">
         <div class="">
             <a href="../index.html">
                 <img src="../img/Icono-png.png" alt="Icono littlebrownieboxba" class="logo-pagina">
@@ -42,12 +42,51 @@
     </header>
 
     <main class="" >
+        <div id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+              <!-- Los elementos del carrito se añadirán aquí -->
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn">Pagar</button>
+        </div>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi excepturi tenetur totam necessitatibus quod possimus maxime doloremque aliquam accusamus, eligendi sunt doloribus unde, beatae, illum omnis nisi quam soluta itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit natus nisi, veritatis hic corporis provident itaque consequatur aliquid nobis perspiciatis optio doloremque quia quos tenetur suscipit quas excepturi quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus quos similique voluptatibus est, veritatis in, ex porro vel explicabo dolorem deserunt rem? Soluta quasi distinctio asperiores impedit, voluptates alias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nesciunt dignissimos delectus animi corporis sapiente voluptates esse pariatur facere maiores fuga ea quo dolore, corrupti molestiae! Tempora sed id ipsa! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium architecto, maxime atque tempora dolorem blanditiis dolorum harum aut nemo numquam voluptatem aperiam soluta voluptatibus excepturi odio nobis reprehenderit veritatis ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odio, eum id, modi totam perferendis facilis, repellendus explicabo dolore culpa maiores repudiandae enim ducimus reprehenderit earum at asperiores cumque magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, debitis aspernatur distinctio repudiandae ipsum animi beatae, laboriosam esse voluptatum voluptas illo perferendis et! Dolorem odit, odio saepe qui nisi fugiat!</p>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <h3>Producto 1</h3>
+            <p>Precio: $10.00</p>
+            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        </div>
+          
+          
+          
+          
+          
+
+
 
     </main>
 
-    <footer>
+    <footer class="footer-carrito">
         <section class="container-footer footer-todo">
     <div class="footer-secciones">
         <h4>Secciones</h4>
@@ -81,6 +120,7 @@
 
         
     </footer>
+    <script src="../javascript/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
