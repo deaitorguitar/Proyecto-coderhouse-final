@@ -16,6 +16,7 @@
 <body>
 
     <header class="header-carrito">
+        
         <div class="">
             <a href="../index.html">
                 <img src="../img/Icono-png.png" alt="Icono littlebrownieboxba" class="logo-pagina">
@@ -26,7 +27,6 @@
         <nav>
             <ul class="nav-list">
                 <li><a href="../index.html" class="active">Inicio</a></li>
-                <li><a href="../pages/Productos.html">Productos</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/nosotros.html">Nosotras</a></li>
                 <li><a href="../pages/Preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
@@ -41,49 +41,60 @@
         
     </header>
 
-    <main class="" >
+    <main >
         <div id="cart">
             <h2>Carrito de Compras</h2>
             <ul id="cart-items">
-              <!-- Los elementos del carrito se añadirán aquí -->
+
             </ul>
             <p>Total: <span id="cart-total">$0.00</span></p>
             <button id="checkout-btn">Pagar</button>
         </div>
 
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
+        <div class="carrito-productos">
+            <div class="product">
+                <h3>Producto 1</h3>
+                <p>Precio: $95.00</p>
+                <button onclick="addToCart('Producto 1', 95)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 2</h3>
+                <p>Precio: $15.00</p>
+                <button onclick="addToCart('Producto 2', 15)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 3</h3>
+                <p>Precio: $12.00</p>
+                <button onclick="addToCart('Producto 3', 12)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 4</h3>
+                <p>Precio: $75.00</p>
+                <button onclick="addToCart('Producto 4', 75)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 5</h3>
+                <p>Precio: $100.00</p>
+                <button onclick="addToCart('Producto 5', 100)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 6</h3>
+                <p>Precio: $180.00</p>
+                <button onclick="addToCart('Producto 5', 180)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 7</h3>
+                <p>Precio: $110.00</p>
+                <button onclick="addToCart('Producto 5', 110)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Producto 8</h3>
+                <p>Precio: $105.00</p>
+                <button onclick="addToCart('Producto 5', 105)">Agregar al Carrito</button>
+            </div>
         </div>
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <h3>Producto 1</h3>
-            <p>Precio: $10.00</p>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al Carrito</button>
-        </div>
+        
           
-          
-          
-          
-          
-
-
-
     </main>
 
     <footer class="footer-carrito">
@@ -120,7 +131,8 @@
 
         
     </footer>
-    <script src="../javascript/main.js"></script>
+    <script src="../javascript/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

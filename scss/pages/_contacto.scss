@@ -1,4 +1,4 @@
-.titulo-contacto{
+.titulo-contacto {
   text-align: center;
   padding: 2rem;
   text-decoration: solid;
@@ -11,33 +11,35 @@
 .contacto {
   margin: auto;
   padding: 3rem 1rem;
+
   img {
-      display: none;
+    display: none;
   }
+
   h2 {
-      text-decoration: underline;
-      text-align: center;
+    text-decoration: underline;
+    text-align: center;
   }
 }
-  
+
 .form-contacto {
   box-shadow: 2px 2px 10px;
   border-radius: 10px;
   padding: 1rem;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-  
+
 .input-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
-  
+
 .form-button {
   background-color: rgb(77, 43, 5);
   padding: 1rem 2rem;
@@ -47,24 +49,26 @@
 }
 
 
-  
-@media(max-width: 1200px) {
-  .container-secc-productos{
-      grid-template-columns: repeat(3, 1fr);    
-      margin-left: 50px;
-      .productos{
-          width: 340px;
-          
-      }
-  }
-}   
 
- 
+@media(max-width: 1200px) {
+  .container-secc-productos {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+
+    .productos {
+      width: 340px;
+
+    }
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .contacto {
     display: flex;
     justify-content: center;
+
     img {
       display: block;
       height: 100%;
@@ -72,7 +76,7 @@
       object-fit: cover;
     }
   }
-  
+
   .cont-contacto {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
@@ -81,13 +85,13 @@
     max-width: 900px;
     box-shadow: 0px 3px 10px;
   }
-  
+
   .form-contacto {
     border-radius: 0;
     box-shadow: 0px 0px 0px;
     align-items: start;
   }
-  
+
   .input-wrapper {
     display: flex;
     flex-direction: column;
@@ -96,24 +100,27 @@
   }
 }
 
-@media(max-width:495px){
-  .mensaje-contacto{
+@media(max-width:495px) {
+  .mensaje-contacto {
     width: 100%;
   }
 }
 
 
-@media(max-width:320px){
-  .mensaje-contacto{
+@media(max-width:320px) {
+  .mensaje-contacto {
     width: 100%;
   }
-  .email-contacto{
+
+  .email-contacto {
     width: 100%;
   }
-  .nombre-contacto{
+
+  .nombre-contacto {
     width: 100%;
   }
-  .titulo-contacto{
+
+  .titulo-contacto {
     margin-top: 40px;
   }
 }

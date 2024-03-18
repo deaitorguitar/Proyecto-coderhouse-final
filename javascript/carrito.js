@@ -1,9 +1,7 @@
 
-
 let cart = [];
 let total = 0;
 
-// Cargar el carrito desde el almacenamiento local al cargar la página
 window.onload = function () {
     if (localStorage.getItem('cart')) {
         cart = JSON.parse(localStorage.getItem('cart'));
@@ -36,8 +34,7 @@ function saveCartToLocalStorage() {
 }
 
 function checkout() {
-    // Aquí puedes agregar la lógica para procesar el pago
-    alert(`Total a pagar: $${total.toFixed(2)}`);
+    alert(`Gracias por su compra!`);
     cart = [];
     total = 0;
     updateCartDisplay();
